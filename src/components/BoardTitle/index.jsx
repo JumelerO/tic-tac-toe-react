@@ -1,0 +1,5 @@
+function BoardTitle() {
+
+}
+
+export { BoardTitle }

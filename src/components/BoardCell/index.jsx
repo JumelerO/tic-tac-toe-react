@@ -1,0 +1,5 @@
+function BoardCell() {
+
+}
+
+export { BoardCell }

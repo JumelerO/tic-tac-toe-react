@@ -1,0 +1,5 @@
+function FPlayerInpt() {
+
+}
+
+export { FPlayerInpt }
