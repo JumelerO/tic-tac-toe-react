@@ -1,5 +1,0 @@
-function BoardTitle() {
-
-}
-
-export { BoardTitle }

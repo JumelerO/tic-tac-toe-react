@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tic Tac Toe</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              rainbow: "rainbow 4s linear infinite",
+              indicate: "indicate 1s linear infinite"
+            },
+            keyframes: {
+              rainbow: {
+                "0%" : {
+                  backgroundPosition: "0% 50%"
+                },
+                "100%" : {
+                  backgroundPosition: "100% 50%"
+                }
+              },
+              indicate: {
+                "0%, 100%" : {
+                  transform: "translateX(25%)",
+                  animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
+                },
+                "50%" : {
+                  transform: "translateX(0)",
+                  animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)"
+                },
+              }
+            },
+            backgroundImage: {
+              rainbow: "linear-gradient(45deg, #ff0000, #ff7700, #ffff00, #00ff00, #0000ff, #ff00ff, #ff0000)"
+            },
+            backgroundColor: {
+              pop: "rgba(0,0,0,0.5)"
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body class="h-min-screen h-screen bg-neutral-700 flex justify-center items-center">
+  <body class="h-min-screen h-screen bg-neutral-700 flex justify-center items-center font-sans">
 
     <div id="root"></div>
+    <div id="score-modal"></div>
+    <div id="login-modal"></div>
 
     <script type="module" src="/src/main.jsx"></script>
   </body>

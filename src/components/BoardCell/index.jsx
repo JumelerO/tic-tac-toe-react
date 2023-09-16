@@ -1,5 +1,0 @@
-function BoardCell() {
-
-}
-
-export { BoardCell }

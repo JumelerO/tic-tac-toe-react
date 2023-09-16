@@ -1,5 +1,0 @@
-function LoginButton() {
-
-}
-
-export { LoginButton }

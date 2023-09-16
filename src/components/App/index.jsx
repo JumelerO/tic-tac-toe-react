@@ -1,12 +1,13 @@
 import { AppUI } from './AppUI'
+import { GameContextProvider } from './context'
 
 function App() {
 
   return (
     <>
-    
-      <AppUI />
-      
+      <GameContextProvider>
+        <AppUI />
+      </GameContextProvider>
     </>
   )
 }

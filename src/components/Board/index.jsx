@@ -1,5 +1,0 @@
-function Board() {
-
-}
-
-export { Board }

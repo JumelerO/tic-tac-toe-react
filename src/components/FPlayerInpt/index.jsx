@@ -1,5 +1,0 @@
-function FPlayerInpt() {
-
-}
-
-export { FPlayerInpt }

@@ -1,5 +1,0 @@
-function SPlayerInpt() {
-
-}
-
-export { SPlayerInpt }

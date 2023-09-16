@@ -1,5 +1,0 @@
-function LoginCard() {
-
-}
-
-export { LoginCard }
